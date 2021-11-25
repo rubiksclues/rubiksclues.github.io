@@ -8,7 +8,7 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*code used to !!fix!! and !!center!! background and create a scroll effect without scroll bars by utilizing the !!cover!! value */
+    /*code used to fix and center background and create a scroll effect without scroll bars by utilizing the cover value TLRD: parrallax scroll on background! */
 }
 body{
     border: 0.3rem solid #AA6622;
@@ -104,7 +104,7 @@ nav a:hover, aside a:hover, .resume-link:hover{
     left: 80px;
     margin: 0;
 }
-.about-link {
+.about-link{
     width: 50%;
     position: relative;
     left: 30rem;
@@ -133,7 +133,7 @@ nav a:hover, aside a:hover, .resume-link:hover{
     height: 100%;
 }
 #note-title{
-    font-size:1rem; /* make title on sticky note text larger than word text on note*/
+    font-size:0.9rem; /* make title on sticky note text larger than word text on note*/
     font-weight: bold;
 }
 #note-text{
@@ -224,6 +224,10 @@ ul:not(.linklist) li #note-anchor:hover,ul li #note-anchor:focus{
     margin-top: 1.5rem;
     padding: 1rem;
     border-radius: 5%;
+}
+.about-text ul{
+    margin: 0;
+    background-color: #FEF7DF;
 }
 .resume-link-container{
     flex-basis: 20%;
