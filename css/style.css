@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+    font-family:'Permanent Marker', cursive;
+}
+html{
+    background: url(../assets/corkboard.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*code used to !!fix!! and !!center!! background and create a scroll effect without scroll bars by utilizing the !!cover!! value */
+}
+body{
+    border: 0.3rem solid #AA6622;
+    margin: 0 0;
+    font-weight: bold;
+    overflow-x: hidden;
+    color: #383434;
+}
+
+/*add space around header and prevent overflow from float on nav/logo */
+header{
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+#logo{
+    font-size: 1.5em;
+    /* margin: 10 10; forgot to put units here and have actually been styling without these margins*/
+    margin-bottom: 3%;
+    float: left;
+}
+#logo a:link{
+    text-decoration: none;
+    
+}
+#logo a:visited{
+    text-decoration: none;
+    color: #454545;
+    
+}
+#logo a:hover{
+    text-decoration: none;
+    color: #62BFED;
+    background-color: #FF92C2;
+    text-shadow: 2px 2px #000;
+    border-radius: 5px;
+}
+.logo-txt{
+    position: absolute;
+    top: 90px;
+    left: 82px;
+}
+
+/* styling nav bar and links */
+nav{
+    float: right;
+    font-size: 1.2rem;
+}
+nav a:link, aside a:link{
+    text-decoration: none;
+    color: #454545;
+}
+.resume-link:link{
+    text-decoration: none;
+    color: #62BFED;
+}
+.resume-link:visited{
+    color: #62BFED;
+}
+nav a:visited, aside a:visited{
+    color:#454545;
+}
+nav a:hover, aside a:hover, .resume-link:hover{
+    text-decoration: none;
+    color: #62BFED;
+    background-color: #FF92C2;
+    text-shadow: 2px 2px #000;
+    border-radius: 20%;
+}
+
+/* center title section and text within the element */
+.title{
+    margin: 0px auto;
+    width: 80%;
+    padding-top: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px #363434f5;
+    border-radius: 5%;
+    background: url(../assets/ruler-resize.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.title h1{
+    margin-bottom: 0;
+}
+/* positions the h3 subtitle tag slightly to the right of the main title*/
+#subtitle{
+    position: relative;
+    left: 80px;
+    margin: 0;
+}
+.about-link {
+    width: 50%;
+    position: relative;
+    left: 30rem;
+    margin-top: 8em;
+    margin-bottom: 5em;
+    background-color: #E7B787;
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+.projects{
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 5%;
+    background-color: #E7B787;
+}
+.projects h2 {
+    text-align: center;
+}
+
+/*below begins sticky note section of code */
+
+.sticky-note{
+    margin: 20px auto;
+    color: #fff;
+    height: 100%;
+}
+#note-title{
+    font-size:1rem; /* make title on sticky note text larger than word text on note*/
+    font-weight: bold;
+}
+#note-text{
+    font-size: .5rem; /* font size just one setting smaller than note title*/
+}
+ul:not(.linklist), li{
+    list-style: none;
+}
+ul:not(.linklist){
+    display:flex;
+    flex-wrap: wrap;
+    /* allows flex content to wrap into multiple lines/aka two rows */
+    justify-content: center; /*put flex items into center of container */
+}
+ul:not(.linklist) li #note-anchor{
+    text-decoration: none;
+    color: #000;
+    background: rgba(255, 255, 204, 0.973);
+    display: block;
+    height: 10em;
+    width: 10em;
+    padding: 1em;
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    /* box shadow sets offset, spread, and color of shadow under sticky note
+    .7 sets 70% opacity of the dark grey color */
+    transform: rotate(-6deg);
+}
+ul:not(.linklist) li{
+    margin: 1em;
+}
+
+ul:not(.linklist) li:nth-child(even) #note-anchor {
+    transform: rotate(4deg);
+    position: relative;
+    top: 5px;
+    background: #c2ffe1f3;
+}
+ul:not(.linklist) li:nth-child(3n) #note-anchor {
+    transform: rotate(-3deg);
+    position: relative;
+    top: -5px;
+    background: #ff92c1f5;
+}
+ul:not(.linklist) li:nth-child(5n) #note-anchor {
+    transform: rotate(5deg);
+    position: relative;
+    top: -10px;
+}
+
+ul:not(.linklist) li #note-anchor:hover,ul li #note-anchor:focus{
+    box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position: relative;
+    z-index: 5;
+}
+/* this ends the sticky note code */
+.about-header{
+    margin-bottom: 1rem;
+}
+.aboutheading{
+    margin: 2rem auto;
+    margin-top: 0.1rem;
+    text-align: center;
+}
+ .about-content{
+    /*styling for main container on about page */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    margin: 2rem;
+} 
+
+.about-image{
+    flex-basis: 30%;
+}
+.about-image img{
+    border-radius:50%;
+    border: 3px solid #62BFED;
+}
+.about-text{
+    flex-basis: 50%;
+    border: 0px solid orange;
+    margin: 2rem 1rem 0.3rem 1rem; /* 2rems t/b 1 l/r */
+
+}
+.about-text p{
+    background-color: #FEF7DF;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 5%;
+}
+.resume-link-container{
+    flex-basis: 20%;
+    border: 0px solid red;
+    background-color: #fffae3f5;
+    border-radius: 5%;
+    height: 15rem;
+    margin: 3rem 0 0 0; /*3rem margin top, 0 right/bottom/left */
+    padding: 2rem 1rem 0 1rem; /*padding 2top 1right 0bottom 1left; */
+}
+/*  CREATE CLASS FOR THE LINKS UL/LI/A'S ON THE LINK-CONTACT PAGE TO OVERRIDE MAIN PAGE CSS */
+.contact-contain{ /* this is wrapper for content on link/contact page */
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #E7B787;
+    border-radius: 5%;
+    /* background: url(../assets/binder-ring-mid.png) no-repeat center; */
+}
+/* accidentally made two elements with the same class,
+one on about page one on the form page. Trying to rename this class caused many errors and the easiest solution I found was to simply untag the about page from the styling i needed on the links page. Sloppy! :( */
+.about-content:not(main){
+    flex-basis: 50%;
+    background-color:rgb(238, 227, 185);
+    border-radius: 5%;
+}
+aside{
+    flex-basis: 17%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.contact-logo{
+    margin-bottom: 1rem;
+}
+.contact-heading, aside h1{
+    width: 30%;
+    margin: 0.5rem 1rem 0 5rem;
+    font-size: 2rem;
+    flex-basis: 100%;
+    border: 2px solid #E7B787;
+    background-color: rgb(248, 243, 222);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+}
+aside h1{
+    width: 98.5%;
+    margin: 0.5rem 3rem -0.07rem 0.2rem;
+}
+aside p{
+    text-align: center;
+    background-color: #EEE3B9;
+    /* margin-right: 2rem; */
+    margin-left: 0.29rem; 
+    margin-top: 0;
+    width: 12.45rem;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.linklist{
+    text-align: center;
+}
+aside ul{
+    background-color: white;
+    border-radius: 5%;
+    margin: 0.4rem;
+}
+fieldset{
+    margin: 5rem 4rem 1rem 0.2rem;
+    background-color: #62BFED;
+    width: 100%;
+    border-radius: 5%;
+}
+label{
+    display: block;
+    margin: 1rem 1rem 0 1rem; /* margin 1top 1right 0bottom 1left */
+}
+input{
+    border-radius: 5px;
+}
+textarea{
+    height: 5rem;
+    border-radius: 5px;
+	box-shadow: 2px 2px rgba(63, 62, 62, 0.925);
+	display: block; /* block display, margins, width and font-size all space boxes and make them longer on the screens*/
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-size: 1rem;
+	padding: 0 1rem; /* 0 top/bottom 1 left/right*/
+}
+
+footer{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* figure out mobile design and do so here 
+@meta {
+
+}
+*/
