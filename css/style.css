@@ -110,7 +110,7 @@ nav a:hover, aside a:hover, .resume-link:hover{
     left: 28rem;
     margin-top: 8em;
     margin-bottom: 5em;
-    background-color: #E7B787;
+    background-color: #EEE3B9;
     border-radius: 5%;
     padding: 1rem;
 }
@@ -118,8 +118,8 @@ nav a:hover, aside a:hover, .resume-link:hover{
 .projects{
     margin-top: 10px;
     width: 30%;
-    border-radius: 5%;
-    background-color: #E7B787;
+    border-radius: 7%;
+    background-color: #EEE3B9;
 }
 .projects h2 {
     text-align: center;
@@ -231,7 +231,7 @@ ul:not(.linklist) li #note-anchor:hover,ul li #note-anchor:focus{
 
 }
 .about-text p{
-    background-color: #FEF7DF;
+    background-color: #EEE3B9;
     margin-top: 1.5rem;
     padding: 1rem;
     border-radius: 5%;
@@ -239,7 +239,7 @@ ul:not(.linklist) li #note-anchor:hover,ul li #note-anchor:focus{
 .about-text ul{
     margin: 0;
     padding: 0;
-    background-color: #FEF7DF;
+    background-color: #EEE3B9;
     border-radius: 5%;
     text-align: center;
     display: block;
@@ -251,7 +251,7 @@ ul:not(.linklist) li #note-anchor:hover,ul li #note-anchor:focus{
 .resume-link-container{
     flex-basis: 20%;
     border: 0px solid red;
-    background-color: #fffae3f5;
+    background-color: #EEE3B9;
     border-radius: 5%;
     height: 15rem;
     margin: 4rem 0 0 0; /*3rem margin top, 0 right/bottom/left */
@@ -308,6 +308,11 @@ aside p{
 }
 .linklist{
     text-align: center;
+    padding-right: 1.5rem;
+    background-color: #EEE3B9;
+}
+.linklist li{
+    list-style-type: square;
 }
 aside ul{
     background-color: white;
